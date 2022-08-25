@@ -7,8 +7,8 @@ from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from resources.data import RAID, REPLYRAID, DEADLYSPAM, BRTHSPAM
-from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDO_USERS, OWNER_ID
-from DEADLYSPAM import CMD_HNDLR as hl
+from XoXoSpam import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDO_USERS, OWNER_ID
+from XoXoSpam import CMD_HNDLR as hl
 
 
 que = {}
@@ -29,14 +29,14 @@ async def spam(e):
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage)
-        Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        XoXo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         bitxh = await e.get_reply_message()
-        if len(Deadly) == 2:
-            user = str(Deadly[1])
+        if len(XoXo) == 2:
+            user = str(XoXo[1])
             a = await e.client.get_entity(user)
             g = a.id
-            if int(g) in Deadly:
-                text = f"I can't raid on @deadly_spam_bot's Owner"
+            if int(g) in XoXo:
+                text = f"I can't raid on @XoXoSpamtBot's Owner"
                 await e.reply(text)
             elif int(g) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
@@ -47,7 +47,7 @@ async def spam(e):
             else:
                 c = a.first_name
                 username = f"[{c}](tg://user?id={g})"
-                counter = int(Deadly[0])
+                counter = int(XoXo[0])
                 for _ in range(counter):
                     reply = random.choice(RAID)
                     caption = f"{username} {reply}"
@@ -58,8 +58,8 @@ async def spam(e):
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
             g = b.id
-            if int(g) in DEADLYSPAM:
-                text = f"I can't raid on @deadly_spam_bot's Owner"
+            if int(g) in XoXoSpam:
+                text = f"I can't raid on @XoXoSpamtBot's Owner"
                 await e.reply(text)
             elif int(g) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
@@ -69,7 +69,7 @@ async def spam(e):
                 await e.reply(text)
             else:
                 c = b.first_name
-                counter = int(Deadly[0])
+                counter = int(XoXo[0])
                 username = f"[{c}](tg://user?id={g})"
                 for _ in range(counter):
                     reply = random.choice(RAID)
@@ -121,15 +121,15 @@ async def _(e):
     global que
     usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>."
     if e.sender_id in SUDO_USERS:
-        Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        SAMx = await e.get_reply_message()
+        XoXo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        LEGENDx = await e.get_reply_message()
         if len(e.text) > 11:
-            message = str(Deadly[0])
+            message = str(XoXo[0])
             a = await e.client.get_entity(message)
             user_idd = a.id
             user_id = int(user_idd)
             if int(user_id) in Deadly:
-                text = f" can't raid on @deadly_spam_bot's Owner."
+                text = f" can't raid on @XoXoSpamtBot's Owner."
                 await e.reply(text)
             elif int(user_id) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."            
@@ -149,8 +149,8 @@ async def _(e):
             umser = await e.client.get_entity(a.sender_id)
             user_idd = umser.id
             user_id = int(user_idd)
-            if int(user_id) in DEADLYSPAM:
-                text = f" can't raid on @deadly_spam_bot's Owner."
+            if int(user_id) in XoXoSpam:
+                text = f" can't raid on @XoXoSpamtBot's Owner."
                 await e.reply(text)
             elif int(user_id) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
@@ -185,10 +185,10 @@ async def _(e):
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage)
-        Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        XoXo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(e.text) > 12:
-            message = str(Deadly[0])
+            message = str(XoXo[0])
             a = await e.client.get_entity(message)
             g = a.id
             try:
@@ -228,12 +228,12 @@ async def _(event):
          if event.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
          Deadly = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
-         if len(Deadly) == 3:
-             user = str(Deadly[2])
+         if len(XoXo) == 3:
+             user = str(XoXo[2])
              a = await event.client.get_entity(user)
              e = a.id
-             if int(e) in DEADLYSPAM:
-                    text = f"I can't raid on @deadly_spam_bot's Owner"
+             if int(e) in XoXoSpam:
+                    text = f"I can't raid on @XoXoSpamtBot's Owner"
                     await event.reply(text)
              elif int(e) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
@@ -244,7 +244,7 @@ async def _(event):
              else:
                  c = a.first_name
                  username = f"[{c}](tg://user?id={e})"
-                 counter = int(Deadly[1])
+                 counter = int(XoXo[1])
                  sleeptimet = sleeptimem = float(Deadly[0])
                  for _ in range(counter):
                       reply = random.choice(RAID)
@@ -256,8 +256,8 @@ async def _(event):
                a = await event.get_reply_message()
                b = await event.client.get_entity(a.sender_id)
                e = b.id
-               if int(e) in DEADLYSPAM:
-                       text = f"I can't raid on @deadly_spam_bot's Owner"
+               if int(e) in XoXoSpam:
+                       text = f"I can't raid on @XoXoSpamtBot's Owner"
                        await event.reply(text)
                elif int(e) == OWNER_ID:
                        text = f"This guy is a owner Of this Bots."
@@ -269,7 +269,7 @@ async def _(event):
                    c = b.first_name
                    username = f"[{c}](tg://user?id={e})"
                    sleeptimet = sleeptimem = float(Deadly[0])
-                   counter = int(Deadly[1])
+                   counter = int(XoXo[1])
                    for _ in range(counter):
                         reply = random.choice(RAID)
                         caption = f"{username} {reply}"
@@ -295,14 +295,14 @@ async def spam(e):
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage)
-        Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        XoXo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         bitxh = await e.get_reply_message()
-        if len(Deadly) == 2:
-            user = str(Deadly[1])
+        if len(XoXo) == 2:
+            user = str(XoXo[1])
             a = await e.client.get_entity(user)
             g = a.id
-            if int(g) in Deadly:
-                text = f"I can't raid on @deadly_spam_bot's Owner"
+            if int(g) in XoXo:
+                text = f"I can't raid on @XoXoSpamtBot's Owner"
                 await e.reply(text)
             elif int(g) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
@@ -313,7 +313,7 @@ async def spam(e):
             else:
                 c = a.first_name
                 username = f"[{c}](tg://user?id={g})"
-                counter = int(Deadly[0])
+                counter = int(XoXo[0])
                 for _ in range(counter):
                     reply = random.choice(BRTHSPAM)
                     caption = f"{username} {reply}"
@@ -324,8 +324,8 @@ async def spam(e):
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
             g = b.id
-            if int(g) in DEADLYSPAM:
-                text = f"I can't raid on @deadly_spam_bot's Owner"
+            if int(g) in XoXoSpam:
+                text = f"I can't raid on @XoXoSpamtBot's Owner"
                 await e.reply(text)
             elif int(g) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
@@ -335,7 +335,7 @@ async def spam(e):
                 await e.reply(text)
             else:
                 c = b.first_name
-                counter = int(Deadly[0])
+                counter = int(XoXo[0])
                 username = f"[{c}](tg://user?id={g})"
                 for _ in range(counter):
                     reply = random.choice(BRTHSPAM)
