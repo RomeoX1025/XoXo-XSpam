@@ -4,26 +4,26 @@ import os
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, Button
 from telethon.tl.custom import button
-from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, ALIVE_PIC, OWNER_ID
+from XoXoSpam import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, ALIVE_PIC, OWNER_ID
 
-DEADLY_IMG = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
+XoXo_IMG = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/b9aac31b258ffce033ffb.jpg"
 
-Deadly_Button = [
+XoXo_Button = [
         [
-        Button.url("• Sᴜᴘᴘᴏʀᴛ •", "https://t.me/Deadly_Spam_Bot")
+        Button.url("🥀 sᴜᴘᴘᴏʀᴛ 🥀", "https://t.me/XoXoSpamtBot")
         ],
         [
-        Button.url("• Mᴀɪɴᴛᴀɪɴ Bʏ •", "https://t.me/Deadly_spambot")
+        Button.url("❤️ ᴍᴀɪɴᴛᴀɪɴᴇʀ ʙʏ ❤️", "https://t.me/XoXoSpamtBot")
         ]
         ]
                
-DeadlyX_Button = [
+XoXox_Button = [
         [
-        Button.url("Cʜᴀɴɴᴇʟ", "https://t.me/Deadly_spambot"),
-        Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/deadly_spam_bot")
+        Button.url(🌹 ᴄʜᴀɴɴᴇʟ 🌹", "https://t.me/XoXoSpamtBot"),
+        Button.url("💞 sᴜᴘᴘᴏʀᴛ 💞", "https://t.me/XoXoSpamtBot")
         ],
         [
-        Button.url("• Rᴇᴘᴏ •", "https://github.com/Team-Deadly/DEADLY-SPAMBOT")
+        Button.url("❄️ ʀᴇᴘᴏ ❄️", "https://github.com/TeamLegend77/XoXo-XSpam")
         ]
         ]
         
@@ -43,22 +43,22 @@ DeadlyX_Button = [
 @BOT9.on(events.NewMessage(pattern="/start"))
 async def start(event):              
     if event.is_private:
-       DeadlyBot = await event.client.get_me()
-       bot_id = DeadlyBot.first_name
-       bot_username = DeadlyBot.username
+       XoXoBot = await event.client.get_me()
+       bot_id = XoXoBot.first_name
+       bot_username = XoXoBot.username
        replied_user = await event.client(GetFullUserRequest(event.sender_id))
        TheDeadly = event.chat_id
        firstname = replied_user.user.first_name
-       ownermsg = f"**Hi Master, Its me {bot_id}, Your Spam Bot !! \n\n Click Below Buttons For help**"
-       usermsg = f"**Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Spam Bot.** \n\n**If You Want Your Own Spam Bots You Can Deploy From Button Below.** \n\n**"
+       ownermsg = f"**ʜɪ ᴍᴀsᴛᴇʀ, ɪᴛs ᴍᴇ {bot_id}, ʏᴏᴜʀ sᴘᴀᴍ ʙᴏᴛ !! \n\n ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴs ғᴏʀ ʜᴇʟᴘ 🥀**"
+       usermsg = f"**ʜᴇʟʟᴏ, {firstname} ! ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ, ᴡᴇʟʟ ɪ ᴀᴍ {bot_id}, ᴀɴ ᴘᴏᴡᴇʀғᴜʟʟ sᴘᴀᴍ ʙᴏᴛ 🔥!** \n\n**ɪғ ʏᴏᴜ ᴡᴀɴᴛ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ ʙᴏᴛs ʏᴏᴜ ᴄᴀɴ ᴅᴇᴘʟᴏʏ ғʀᴏᴍ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇!** \n\n**"
        if event.sender_id == OWNER_ID:
-            await event.client.send_file(TheDeadly,
-                  DEADLY_IMG,
+            await event.client.send_file(TheXoXo,
+                  XoXo_IMG,
                   caption=ownermsg, 
-                  buttons=Deadly_Button)
+                  buttons=XoXo_Button)
        else:
-            await event.client.send_file(TheDeadly,
-                  DEADLY_IMG,
+            await event.client.send_file(TheXoXo,
+                  XoXo_IMG,
                   caption=usermsg, 
-                  buttons=DeadlyX_Button)
+                  buttons=XoXox_Button)
                 
