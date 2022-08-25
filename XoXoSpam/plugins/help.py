@@ -36,7 +36,7 @@ async def help(event):
                                   caption=XOXO_Help,
                                   buttons=[
         [
-        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Deadly_spambot")
+        Button.url("💞 ᴄʜᴀɴɴᴇʟ 💞", "https://t.me/XoXoSpamtBot")
         ] 
         ]
         )
