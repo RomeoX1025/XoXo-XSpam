@@ -1,17 +1,13 @@
 {
-    "name": "Deadly Spam Bot",
-    "description": "MOST POWERFUL + STABLE SPAM USERBOTS",
+    "name": "XoXo Spam Bot",
+    "description": "ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ + sᴛᴀʙʟᴇ sᴘᴀᴍ ᴜsᴇʀʙᴏᴛs",
     "logo": "",
     "keywords": [
         "telegram",
         "telethon",
         "telegram-bot",
-        "deadlySameer",
         "SpamBots"
     ],
-    "repository": "https://t.me/Deadly-Fighters",
-    "website": "https://t.me/Deadly-Fighters",
-    "success_url": "https://t.me/deadly-fighters",
     "env": {
              "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
@@ -89,7 +85,7 @@
             "required": false
         },
       "OWNER_ID": {
-            "description": "owner Id",
+            "description": "Owner Id",
             "value": "",
             "required": true
         },
