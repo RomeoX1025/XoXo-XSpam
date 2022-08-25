@@ -5,7 +5,7 @@ from time import time
 from datetime import datetime
 from XoXoSpam import CMD_HNDLR as hl
     
-HELP_PIC = "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
+HELP_PIC = "https://te.legra.ph/file/b9aac31b258ffce033ffb.jpg"
 
 XOXO_Help = "🔥 xᴏxᴏ sᴘᴀᴍ ʙᴏᴛ 🔥\n\n"
  
