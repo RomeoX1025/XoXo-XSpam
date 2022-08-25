@@ -3,42 +3,42 @@ import asyncio
 import sys
 import git
 import heroku3
-# Changed root to DEADLYSPAM
-from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
-from DEADLYSPAM import OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, deadlyversion
-from DEADLYSPAM import CMD_HNDLR as hl
+# Changed root to XoXoSpam
+from XoXoSpam import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
+from XoXoSpam import OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, deadlyversion
+from XoXoSpam import CMD_HNDLR as hl
 from telethon.tl.functions.users import GetFullUserRequest
 # alive Pic By Default It's Will Show Our
-from DEADLYSPAM import ALIVE_PIC
+from XoXoSpam import ALIVE_PIC
 from telethon import events, version, Button
 from telethon.tl.custom import button
 from time import time
 from datetime import datetime
 
-DEAD_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
+XOXO_PIC = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/b9aac31b258ffce033ffb.jpg"
   
 
-DEADLY = "✯ 𝗗𝗲𝗮𝗱𝗹𝘆 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✯\n\n"
-DEADLY += f"═══════════════════\n"
-DEADLY += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.10.1`\n"
-DEADLY += f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
-DEADLY += f"• **ᴅᴇᴀᴅʟʏʙᴏᴛ ᴠᴇʀsɪᴏɴ**  : `{deadlyversion}`\n"
-DEADLY += f"═══════════════════\n\n"   
+XOXO = "✯ 𝗫𝗼𝗫𝗼 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✯\n\n"
+XOXO += f"═══════════════════\n"
+XOXO += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.10.1`\n"
+XOXO += f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
+XOXO += f"• **xᴏxᴏʙᴏᴛ ᴠᴇʀsɪᴏɴ**  : `{xoxoversion}`\n"
+XOXO += f"═══════════════════\n\n"   
 
                                   
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
 async def alive(event):
   if event.sender_id in SUDO_USERS:
      await BOT0.send_file(event.chat_id,
-                                  DEAD_PIC,
-                                  caption=DEADLY,
+                                  XOXO_PIC,
+                                  caption=XOXO,
                                   buttons=[
         [
-        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Deadly_spambot"),
-        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/DEADLY_SPAM_BOT")
+        Button.url("💞 ᴄʜᴀɴɴᴇʟ 💞", "https://t.me/XoXoSpamtBot"),
+        Button.url("🥀 sᴜᴘᴘᴏʀᴛ 🥀", "https://t.me/XoXoSpamtBot")
         ],
         [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Team-Deadly/DEADLY-SPAMBOT")
+        Button.url("❄️ ʀᴇᴘᴏ ❄️", "https://github.com/TeamLegend77/XoXo-XSpam")
         ]
         ]
         )
@@ -177,7 +177,7 @@ async def tb(event):
         else:
             newsudo = f"{target}"
         await ok.edit(f"**Added `{target}` ** as a sudo user 🔱 Restarting.. Please wait a minute...")
-        heroku_var[DEADLY] = newsudo   
+        heroku_var[XoXo] = newsudo   
    
      
 async def get_user(event):
