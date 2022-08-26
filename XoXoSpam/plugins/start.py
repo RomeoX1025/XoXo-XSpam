@@ -19,7 +19,7 @@ XoXo_Button = [
                
 XoXox_Button = [
         [
-        Button.url(🌹 ᴄʜᴀɴɴᴇʟ 🌹", "https://t.me/XoXoSpamtBot"),
+        Button.url("🌹 ᴄʜᴀɴɴᴇʟ 🌹", "https://t.me/XoXoSpamtBot"),
         Button.url("💞 sᴜᴘᴘᴏʀᴛ 💞", "https://t.me/XoXoSpamtBot")
         ],
         [
