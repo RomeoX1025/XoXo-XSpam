@@ -47,7 +47,7 @@ async def start(event):
        bot_id = XoXoBot.first_name
        bot_username = XoXoBot.username
        replied_user = await event.client(GetFullUserRequest(event.sender_id))
-       TheDeadly = event.chat_id
+       TheXoXo = event.chat_id
        firstname = replied_user.user.first_name
        ownermsg = f"**ʜɪ ᴍᴀsᴛᴇʀ, ɪᴛs ᴍᴇ {bot_id}, ʏᴏᴜʀ sᴘᴀᴍ ʙᴏᴛ !! \n\n ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴs ғᴏʀ ʜᴇʟᴘ 🥀**"
        usermsg = f"**ʜᴇʟʟᴏ, {firstname} ! ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ, ᴡᴇʟʟ ɪ ᴀᴍ {bot_id}, ᴀɴ ᴘᴏᴡᴇʀғᴜʟʟ sᴘᴀᴍ ʙᴏᴛ 🔥!** \n\n**ɪғ ʏᴏᴜ ᴡᴀɴᴛ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ ʙᴏᴛs ʏᴏᴜ ᴄᴀɴ ᴅᴇᴘʟᴏʏ ғʀᴏᴍ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇!** \n\n**"
