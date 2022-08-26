@@ -22,7 +22,7 @@ XOXO = "✯ 𝗫𝗼𝗫𝗼 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✯\n\n"
 XOXO += f"═══════════════════\n"
 XOXO += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.10.1`\n"
 XOXO += f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
-XOXO += f"• **xᴏxᴏʙᴏᴛ ᴠᴇʀsɪᴏɴ**  : `{XoXoSpamversion}`\n"
+XOXO += f"• **xᴏxᴏʙᴏᴛ ᴠᴇʀsɪᴏɴ**  : `{xoxoversion}`\n"
 XOXO += f"═══════════════════\n\n"   
 
                                   
