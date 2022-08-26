@@ -21,7 +21,7 @@ for name in files:
         load_plugins(plugin_name.replace(".py", ""))
 
 deadly = "🎉 Successfully Deployed XoXo SpamBot 🎉 @XoXoSpamtBot Enjoy! Do visit @XoXoSpamtBot"
-print(xoxo[0: ])
+print(XoXo[0: ])
 
 if __name__ == "__main__":
     BOT0.run_until_disconnected()
